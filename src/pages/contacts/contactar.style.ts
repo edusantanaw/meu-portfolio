@@ -6,6 +6,10 @@ export const Container = styled.section`
     background-color: #000;
     color: #fff;
     padding-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
 `
 
 export const Form = styled.form`
