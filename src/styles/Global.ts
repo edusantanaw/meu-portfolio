@@ -20,4 +20,7 @@ li{
 
 export const SecondaryTitle = styled.h2`
     font-size: 3em;
-`   
+`
+export const SubTitle = styled.h3`
+    font-size: 2em;
+`

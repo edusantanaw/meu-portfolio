@@ -18,9 +18,6 @@ export const Container = styled.section`
     .summary{
         margin-top: 2em;
         width: 90%;
-        h3{
-            font-size: 2em;
-        }
     }
     .infos{
         margin-top: 2em;

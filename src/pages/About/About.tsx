@@ -1,5 +1,5 @@
 import React from 'react'
-import { SecondaryTitle } from '../../styles/Global'
+import { SecondaryTitle, SubTitle } from '../../styles/Global'
 import { Container } from './about.styles'
 import eu from '../../assets/IMG_20221201_103826_240-PhotoRoom.png-PhotoRoom.png'
 
@@ -9,13 +9,13 @@ const About = () => {
             <div>
                 <SecondaryTitle>Sobre mim</SecondaryTitle>
                 <div className="summary">
-                    <h3>Resumo</h3>
+                    <SubTitle>Resumo</SubTitle>
                     <p>Sou um desenvolvedor web, tenho um perfil mais generalista, gosto de estudar diversas
                         frentes na area de desenvolvimento, porem tenho um foco maior no backend, afinal sempre
                         gostei de logica.</p>
                 </div>
                 <div className='infos'>
-                    <h3>Informações pessoais</h3>
+                    <SubTitle>Informações pessoais</SubTitle>
                     <ul>
                         <li><span>Nome:</span> Eduardo Santana Vidal</li>
                         <li><span>Cidade:</span> Sorocaba-SP</li>

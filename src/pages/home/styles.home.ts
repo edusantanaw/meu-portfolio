@@ -2,9 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.section`
     width: 100%;
-    padding: 10em 6em 0 6em;
+    padding: 0 6em 0 6em;
     background-color: #000;
-    min-height: 100vh;    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .who{
         padding-top: 1em;
         display: flex;
