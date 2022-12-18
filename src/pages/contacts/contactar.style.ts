@@ -34,6 +34,11 @@ export const Form = styled.form`
         background-color: transparent;
         border: none;
         border-bottom: 1px solid #fff;
+        color: #fff;
+
+        &:focus{
+            outline: none;
+        }
     }
 
     button{
