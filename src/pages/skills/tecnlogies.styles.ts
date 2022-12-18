@@ -14,6 +14,7 @@ export const Container = styled.section`
 
 export const List = styled.ul`
     display: flex;
+    justify-content:center;
     flex-wrap: wrap;
     gap: 1.5em;
     padding-top: 2em;

@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.section`
     width: 100%;
-    padding: 0 6em;
+    padding: 0 6em 6em 6em;
     background-color:#000;
     color: #fff;
-    height: 100vh;
     display: flex;
     .me{
         display: flex;

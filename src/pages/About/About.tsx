@@ -5,12 +5,12 @@ import eu from '../../assets/IMG_20221201_103826_240-PhotoRoom.png-PhotoRoom.png
 
 const About = () => {
     return (
-        <Container>
+        <Container id="about">
             <div>
                 <SecondaryTitle>Sobre mim</SecondaryTitle>
                 <div className="summary">
                     <SubTitle>Resumo</SubTitle>
-                    <p>Sou um desenvolvedor web, tenho um perfil mais generalista, gosto de estudar diversas
+                    <p>Sou um desenvolvedor web, tenho um perfil mais generalista, gosto de estudar sobre diversas
                         frentes na area de desenvolvimento, porem tenho um foco maior no backend, afinal sempre
                         gostei de logica.</p>
                 </div>

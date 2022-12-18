@@ -6,10 +6,10 @@ export const Nav = () => {
         <Navegation>
             <h2>Logo</h2>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Tecnologias</a></li>
-                <li><a href="">Projetos</a></li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#project">Projetos</a></li>
+                <li><a href="#tec">Tecnologias</a></li>
             </ul>
         </Navegation>
     )

@@ -3,7 +3,7 @@ import { Button, Container, Span, SubTitle, Title } from './styles.home'
 import { IoLocationOutline } from 'react-icons/io5'
 const Home = () => {
     return (
-        <Container>
+        <Container id="home">
             <Span>Seja bem vindo ao meu portfolio!</Span>
             <div className='who'>
                 <Title>Sou o Eduardo Santana</Title>
