@@ -33,7 +33,7 @@ export const projects = [
     {
         img: port,
         name: 'Antigo portfolio',
-        descriptions: `Este projeto é o meu antigo projeto,  .`,
+        descriptions: `Este projeto é o meu antigo projeto.`,
         tecnolgies: [
             { icon: SiReact, color: '#092aa1' },
             { icon: SiTypescript, color: '#061e95' },

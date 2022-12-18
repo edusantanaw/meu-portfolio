@@ -8,8 +8,15 @@ export const Container = styled.section`
     padding-bottom: 3em;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    h2{
+        align-self: center;
+        padding-bottom: 0.2em;
+    }
+    .content{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 `
 
 export const Form = styled.form`

@@ -1,39 +1,19 @@
-import nodemailer from 'nodemailer'
-import { config } from '../config/sender'
+import emailjs from "@emailjs/browser";
 
 interface data {
-    email: string;
-    name: string;
-    subject: string;
-    message: string;
+    from_name: string
+    message: string
+    email: string
 }
 
+export async function sender(data: data) {
 
-function create() {
-    const transport = nodemailer.createTransport({
-        host: config.host,
-        port: config.port,
-        secure: false,
-        auth: {
-            user: config.user,
-            pass: config.pass,
-        },
-        tls: {
-            rejectUnauthorized: false,
-        }
-    })
-    return transport
+    const { email, from_name, message } = data
+    const templete = {
+        from_name,
+        email,
+        message
+    }
+    const response = await emailjs.send("service_0swg3dr", "template_ai8mvf5", templete, "StUPjn71W8s6ljHzF")
+    console.log(response)
 }
-
-async function sender(data: data) {
-    const mailSend = create()
-    await mailSend.sendMail({
-        subject: data.subject,
-        text: data.message,
-        from: 'Eduardo Santana',
-        to: data.email
-    })
-}
-
-export default sender
-

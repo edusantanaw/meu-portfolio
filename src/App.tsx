@@ -1,4 +1,5 @@
 import ContactsMenu from "./layout/ContactsMenu"
+import Footer from "./layout/Footer"
 import { Nav } from "./layout/Nav"
 import About from "./pages/About/About"
 import Contactar from "./pages/contacts/Contactar"
@@ -20,6 +21,7 @@ function App() {
       <Projects />
       <Tecnologies />
       <Contactar />
+      <Footer />
     </div>
   )
 }

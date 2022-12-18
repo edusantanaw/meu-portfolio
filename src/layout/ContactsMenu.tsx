@@ -6,10 +6,10 @@ const ContactsMenu = () => {
     return (
         <Container>
             <ul>
-                <li><BsInstagram /></li>
-                <li><BsLinkedin /></li>
-                <li><BsWhatsapp /></li>
-                <li><BsGithub /></li>
+                <li><a href='https://www.instagram.com/edusantanaw/'><BsInstagram color="#a90abb" /></a></li>
+                <li><a href="https://www.linkedin.com/in/eduardo-santana-7a4926245/"><BsLinkedin color="#0a29c4" /></a></li>
+                <li><BsWhatsapp color="#0d861b" /></li>
+                <li><a href="https://github.com/edusantanaw"><BsGithub color="#61105d" /></a></li>
             </ul>
         </Container>
     )

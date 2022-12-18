@@ -16,5 +16,12 @@ export const Container = styled.div`
         gap: 0.9em;
         font-size: 1.06em;
         color: #b7adad;
+
+        svg{
+            transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+            &:hover{
+                transform: translate3d(5px, -3px, 0)
+            }
+        }
     }
 `

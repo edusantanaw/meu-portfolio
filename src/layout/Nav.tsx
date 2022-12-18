@@ -9,7 +9,7 @@ export const Nav = () => {
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#project">Projetos</a></li>
-                <li><a href="#tec">Tecnologias</a></li>
+                <li><a href="#contact">Contatar</a></li>
             </ul>
         </Navegation>
     )

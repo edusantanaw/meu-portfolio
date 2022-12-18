@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { SecondaryTitle } from '../../styles/Global'
 import { CardList, Container } from './projects.styles'
 import { GrNext, GrPrevious } from 'react-icons/gr'
@@ -27,7 +27,6 @@ const Projects = () => {
         setCurrent(index)
     }
 
-    console.log(current)
 
     return (
         <Container id='project'>
@@ -52,11 +51,7 @@ const Projects = () => {
                     <div className='icons'>
                         {atual.tecnolgies.map((tec) => {
                             const Icons = tec.icon
-                            return (
-                                <>
-                                    {<Icons color={tec.color} />}
-                                </>
-                            )
+                            return <Icons color={tec.color} />
                         })}
                     </div>
                     <div className='links'>
