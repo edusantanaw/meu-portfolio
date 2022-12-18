@@ -17,3 +17,7 @@ li{
     list-style: none;
 }
 `
+
+export const SecondaryTitle = styled.h2`
+    font-size: 3em;
+`   

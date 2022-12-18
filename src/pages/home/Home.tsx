@@ -4,11 +4,8 @@ import { IoLocationOutline } from 'react-icons/io5'
 const Home = () => {
     return (
         <Container>
-            <div className='top'>
-                <hr />
-                <Span>Seja bem vindo ao meu portfolio!</Span>
-            </div>
-            <div className='teste'>
+            <Span>Seja bem vindo ao meu portfolio!</Span>
+            <div className='who'>
                 <Title>Sou o Eduardo Santana</Title>
                 <SubTitle>Desenvolvedor Full-Stack</SubTitle>
                 <div>

@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.section`
     width: 100%;
-    padding: 9em 6em 0 6em;
+    padding: 10em 6em 0 6em;
     background-color: #000;
     min-height: 100vh;    
-    .teste{
-        padding-top: 2em;
+    .who{
+        padding-top: 1em;
         display: flex;
         flex-direction: column;
         gap: 0;
@@ -29,19 +29,6 @@ export const Container = styled.section`
             }
         }
     }
-
-    .top{
-        display: flex;
-        align-items:center;
-        gap: 1em;
-        hr{
-            background-color: #B7ADAD;
-            height: 0.11em;
-            width: 5em;
-            border: none;
-            border-radius: 5px;
-    }
-}
 `
 
 export const Title = styled.h1`

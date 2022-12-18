@@ -11,10 +11,11 @@ export const Navegation = styled.header`
     color: #fff;
     ul{
         display: flex;
-        gap: 1em;
+        gap: 2em;
     }
 
     a{
         color: #fff;
+        font-size: 1.2em;
     }
 `

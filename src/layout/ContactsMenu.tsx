@@ -5,7 +5,6 @@ import { BsInstagram, BsLinkedin, BsWhatsapp, BsGithub } from 'react-icons/bs'
 const ContactsMenu = () => {
     return (
         <Container>
-            <hr />
             <ul>
                 <li><BsInstagram /></li>
                 <li><BsLinkedin /></li>
