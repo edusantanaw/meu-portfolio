@@ -10,6 +10,18 @@ export const Container = styled.section`
         text-align: center;
         padding-bottom: 1em;
     }
+
+    @media (max-width: 1100px){
+        padding: 0 2em;
+       }
+
+       @media (max-width: 700px){
+        padding: 0 2em;
+       }
+       @media (max-width: 530px){
+        padding: 0;    
+        }
+    
 `
 
 export const CardList = styled.div`
@@ -17,12 +29,59 @@ export const CardList = styled.div`
     display: flex;
     padding-bottom: 2em;
     justify-content: space-around;
+
+    @media (max-width: 1000px){
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
     
     .content{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 50%;
+        @media (max-width: 1000px) {
+            width: 100%;
+           .image{
+            justify-content: center;
+            width: 80%;
+            img{
+                width: 80%;
+                height: 20em;
+            }
+           }
+        }
+
+        @media (max-width: 700px){
+            .image{
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 520px){
+            
+            .image{
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 60vh;    
+                }
+              
+                #next, #prev{
+                    position: absolute;
+                    z-index: 2;
+                    background-color: #FF5C00;
+                    
+                }
+                #next{
+                    right: 5px;
+                }
+                #prev{
+                    left: 5px;
+                }
+            }
+        }
     }
     .image{
         display: flex;
@@ -45,7 +104,8 @@ export const CardList = styled.div`
                 opacity: 0.8;
             }
         }
-    }
+        
+    };
     .actual{
         display: flex;
         gap: 1em;
@@ -78,6 +138,18 @@ export const CardList = styled.div`
         span{
             margin-top: 2em;
             font-size: 1.4em;
+        }
+
+        @media (max-width: 1000px){
+            width: 70%;
+        }
+
+        @media (max-width: 700px){
+            width: 90%;
+        }
+        @media (max-width: 520px){
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -126,5 +198,7 @@ export const CardList = styled.div`
                 transform: translate3d(0, 0px,0)
             }
        }
+
+      
     
 `

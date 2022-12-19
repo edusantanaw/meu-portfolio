@@ -25,10 +25,22 @@ export const Container = styled.section`
         justify-content: space-between;
         align-items: center;
     }
+
+    @media (max-width: 800px){
+        justify-content: center;
+        align-items: center;
+        #robot{
+            display: none;
+        }
+    }
+
+    @media (max-width: 550px){
+        padding: 0 1em;
+        padding-bottom: 3em;
+    }
 `
 
 export const Form = styled.div`
-
     width: 30em;
     display: flex;
     flex-direction: column;
@@ -77,6 +89,16 @@ export const Form = styled.div`
         &:hover{
             opacity: 0.7;
         }
+    }
+
+    @media (max-width: 800px){
+        button{
+            width: 100%;
+        } ;
+    }
+
+    @media (max-width: 550px){
+        width: 25em;
     }
 
 `

@@ -64,7 +64,7 @@ const Contactar = () => {
             <SecondaryTitle>Contatar</SecondaryTitle>
             <span ref={spanRef} />
             <div className='content'>
-                <Lottie  {...defaultConfig} style={{ width: '35em', height: '35em' }} />
+                <Lottie id="robot"  {...defaultConfig} style={{ width: '35em', height: '35em' }} />
                 <Form>
                     <div>
                         <label><BsFilePerson /> Nome</label>

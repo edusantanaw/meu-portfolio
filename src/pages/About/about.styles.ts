@@ -42,4 +42,14 @@ export const Container = styled.section`
     h3{
             font-size: 2em;
         }
+
+        @media (max-width: 880px){
+            .me{
+                display: none;
+            }
+        }
+
+        @media (max-width: 550px){
+            padding: 0 4em 4em 4em;
+        }
 `

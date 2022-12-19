@@ -45,6 +45,9 @@ export const Container = styled.section`
             transform: translate3d(0px,0, 0)
         }
     }
+    @media (max-width: 550px){
+            padding: 4em 4em 4em 4em;
+        }
 `
 
 export const Title = styled.h1`

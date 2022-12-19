@@ -2,14 +2,19 @@ import styled from "styled-components";
 
 export const Container = styled.section`
     width: 100%;
-    height: 40vh;
     color:#fff;
     background-color: #000;
     padding: 0 6em;
     opacity: 0;
+    padding-bottom: 2em;
     h3{
         margin-top: 2.5em;
     }
+
+    @media (max-width: 700px) {
+        padding: 0 2em;
+    }
+
 `
 
 export const List = styled.ul`
