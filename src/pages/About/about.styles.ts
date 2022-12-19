@@ -6,6 +6,10 @@ export const Container = styled.section`
     background-color:#000;
     color: #fff;
     display: flex;
+    opacity: 0;
+    .show{
+        animation: animate 0.7s 1s ease-in-out forwards;
+}
     .me{
         display: flex;
         width: 40em;
@@ -41,4 +45,15 @@ export const Container = styled.section`
             font-size: 2em;
         }
         
+
+       @keyframes animate {
+            from{
+                opacity: 0;
+                transform: translate3d(-80px, 0px,0)
+            }
+            to{
+                opacity: 1;
+                transform: translate3d(0, 0px,0)
+            }
+       }
 `

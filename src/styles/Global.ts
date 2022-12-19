@@ -11,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
 }
 body{
     scroll-behavior: smooth;
+    background-color: #000;
+    .show{
+        animation: animate 0.7s 0.1s ease-in-out forwards;
+    }
 }
 a{
     text-decoration: none;
