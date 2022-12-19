@@ -6,7 +6,7 @@ export const Container = styled.section`
     color:#fff;
     background-color: #000;
     padding: 0 6em;
-
+    opacity: 0;
     h3{
         margin-top: 2.5em;
     }

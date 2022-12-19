@@ -12,10 +12,37 @@ export const GlobalStyle = createGlobalStyle`
 body{
     scroll-behavior: smooth;
     background-color: #000;
-    .show{
+    .about, .contact{
         animation: animate 0.7s 0.1s ease-in-out forwards;
     }
+
+    .projects, .tec {
+        animation: animateProj 0.7s 0.1s ease-in-out forwards;
+    }
+
+
+    @keyframes animate {
+            from{
+                opacity: 0;
+                transform: translate3d(-80px, 0px,0)
+            }
+            to{
+                opacity: 1;
+                transform: translate3d(0, 0px,0)
+            }
+       }
 }
+    @keyframes animateProj {
+            from{
+                opacity: 0;
+                transform: translate3d(0px, 100px,0)
+            }
+            to{
+                opacity: 1;
+                transform: translate3d(0, 0px,0)
+            }
+       }
+
 a{
     text-decoration: none;
 }

@@ -1,14 +1,16 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { SecondaryTitle } from '../../styles/Global'
 import { CardList, Container } from './projects.styles'
 import { GrNext, GrPrevious } from 'react-icons/gr'
 import { projects } from '../../utils/project'
+import { useAnimate } from '../../hooks/useAnimate'
 
 const Projects = () => {
 
     const [current, setCurrent] = useState<number>(0)
     const [atual, setActual] = useState(projects[current])
-
+    const spanRef = useRef<HTMLSpanElement>(null)
+    const { show } = useAnimate(spanRef)
     useEffect(() => {
         setActual(projects[current])
     }, [current])
@@ -29,9 +31,10 @@ const Projects = () => {
 
 
     return (
-        <Container id='project'>
+        <Container className={show ? 'projects' : ''} id='project' >
             <SecondaryTitle>Meus projetos</SecondaryTitle>
             <CardList className='myCard'>
+                <span ref={spanRef}></span>
                 <div className='content'>
                     <div className='image'>
                         <GrPrevious id='prev' onClick={prev} />

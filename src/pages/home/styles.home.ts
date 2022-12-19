@@ -8,6 +8,8 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    opacity: 0;
+    animation: home 1.1s 0s ease-in-out forwards;
     .who{
         padding-top: 1em;
         display: flex;
@@ -30,6 +32,17 @@ export const Container = styled.section`
                 letter-spacing: 0.2em;
                 font-weight: 500;
             }
+        }
+    }
+
+    @keyframes home {
+        from{
+            opacity: 0;
+            transform: translate3d(0px,-60px, 0);
+        }
+        to{
+            opacity: 1;
+            transform: translate3d(0px,0, 0)
         }
     }
 `

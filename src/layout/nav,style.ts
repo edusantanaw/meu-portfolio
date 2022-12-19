@@ -9,6 +9,7 @@ export const Navegation = styled.header`
     align-items: center;
     padding: .8em 6em;
     color: #fff;
+    z-index: 3;
     ul{
         display: flex;
         gap: 2em;

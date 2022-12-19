@@ -8,6 +8,11 @@ export const Container = styled.section`
     padding-bottom: 3em;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+
+    #error{
+        color: red;
+    }
     h2{
         align-self: center;
         padding-bottom: 0.2em;
@@ -19,7 +24,7 @@ export const Container = styled.section`
     }
 `
 
-export const Form = styled.form`
+export const Form = styled.div`
 
     width: 30em;
     display: flex;

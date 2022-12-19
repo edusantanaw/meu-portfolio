@@ -9,34 +9,32 @@ const About = () => {
     const { show } = useAnimate(myRef)
 
     return (
-        <>
-            <Container className={show ? "show" : ''} id="about">
-                <div id="principal" >
-                    <SecondaryTitle>Sobre mim</SecondaryTitle>
-                    <span ref={myRef}></span>
-                    <div className="summary">
-                        <SubTitle>Resumo</SubTitle>
-                        <p>Sou um desenvolvedor web, tenho um perfil mais generalista, gosto de estudar sobre diversas
-                            frentes na area de desenvolvimento, porem tenho um foco maior no backend, afinal sempre
-                            gostei de logica.</p>
-                    </div>
+        <Container className={show ? "about" : ''} id="about">
+            <div id="principal" >
+                <SecondaryTitle>Sobre mim</SecondaryTitle>
+                <span ref={myRef}></span>
+                <div className="summary">
+                    <SubTitle>Resumo</SubTitle>
+                    <p>Sou um desenvolvedor web, tenho um perfil mais generalista, gosto de estudar sobre diversas
+                        frentes na area de desenvolvimento, porem tenho um foco maior no backend, afinal sempre
+                        gostei de logica.</p>
+                </div>
 
-                    <div className='infos'>
-                        <SubTitle>Informações pessoais</SubTitle>
-                        <ul>
-                            <li><span>Nome:</span> Eduardo Santana Vidal</li>
-                            <li><span>Cidade:</span> Sorocaba-SP</li>
-                            <li><span>idade:</span> 20 Anos</li>
-                            <li><span>Status profissional:</span> Disponivel</li>
-                            <li><span>Telefone:</span> 15981026465</li>
-                        </ul>
-                    </div>
+                <div className='infos'>
+                    <SubTitle>Informações pessoais</SubTitle>
+                    <ul>
+                        <li><span>Nome:</span> Eduardo Santana Vidal</li>
+                        <li><span>Cidade:</span> Sorocaba-SP</li>
+                        <li><span>idade:</span> 20 Anos</li>
+                        <li><span>Status profissional:</span> Disponivel</li>
+                        <li><span>Telefone:</span> 15981026465</li>
+                    </ul>
                 </div>
-                <div className='me'>
-                    <img src={eu} alt="minha foto" />
-                </div>
-            </Container>
-        </>
+            </div>
+            <div className='me'>
+                <img src={eu} alt="minha foto" />
+            </div>
+        </Container>
     )
 }
 

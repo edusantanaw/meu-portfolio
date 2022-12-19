@@ -5,6 +5,7 @@ export const Container = styled.section`
     padding: 0 6em;
     background-color: #000;
     color: #fff;
+    opacity: 0;
     h2{
         text-align: center;
         padding-bottom: 1em;
