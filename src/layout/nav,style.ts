@@ -15,6 +15,10 @@ export const Navegation = styled.header`
         gap: 2em;
     }
 
+    #logo{
+        width: 2em;
+    }
+
     a{
         color: #fff;
         font-size: 1.2em;

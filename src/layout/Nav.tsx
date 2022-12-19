@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Navegation } from './nav,style'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { FaAngleRight } from 'react-icons/fa'
+import logo from '../assets/logo.png'
 
 export const Nav = () => {
 
@@ -13,7 +14,7 @@ export const Nav = () => {
 
     return (
         <Navegation>
-            <h2>Logo</h2>
+            <a href="#home"><img id="logo" src={logo} alt="logo" /></a>
             <ul className={show ? 'menu' : ''}>
                 {show && <FaAngleRight id="close" onClick={handleMenu} />}
                 <li><a href="#home">Inicio</a></li>
