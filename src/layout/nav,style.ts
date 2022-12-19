@@ -62,7 +62,7 @@ export const Navegation = styled.header`
     }
 
     @media (max-width: 650px){
-        padding: 1em 4em;
+        padding: 1em;
         ul{
             display: none;
         }

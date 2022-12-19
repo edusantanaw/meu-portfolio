@@ -46,7 +46,7 @@ export const Container = styled.section`
         }
     }
     @media (max-width: 550px){
-            padding: 4em 4em 4em 4em;
+            padding: 2em 1em 1em 1em;
         }
 `
 

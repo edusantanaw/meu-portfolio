@@ -50,6 +50,6 @@ export const Container = styled.section`
         }
 
         @media (max-width: 550px){
-            padding: 0 4em 4em 4em;
+            padding: 0 1em 1em 1em;
         }
 `
