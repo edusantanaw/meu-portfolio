@@ -15,12 +15,12 @@ function App() {
     <div>
       <GlobalStyle />
       <Nav />
-      <ContactsMenu />
       <Home />
       <About />
       <Projects />
       <Tecnologies />
       <Contactar />
+      <ContactsMenu />
       <Footer />
     </div>
   )

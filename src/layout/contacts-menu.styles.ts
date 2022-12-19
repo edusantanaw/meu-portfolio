@@ -24,4 +24,19 @@ export const Container = styled.div`
             }
         }
     }
+
+    @media (max-width: 550px){
+        position: relative;
+        justify-content: center;
+        top:0;
+        left: 0;
+        ul{
+            justify-content: center;
+            flex-direction: row;
+            gap: 2em;
+            svg{
+                font-size: 1.4em;
+            }
+        }
+}
 `
