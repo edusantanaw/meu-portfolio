@@ -18,5 +18,30 @@ export const Navegation = styled.header`
     a{
         color: #fff;
         font-size: 1.2em;
+        transition: 0.4s ease-in-out;
+        &:hover{
+            color: #FF5C00;
+        }
+
+       
+    }
+    li{
+        position: relative;
+    
+        &::after{
+            content: " ";
+            height: 2px;
+            width: 0%;
+            background-color: #FF5C00;
+            color: blue;
+            top: 26px;
+            left: 0;
+            position: absolute;
+            transition: 0.4s ease-in-out;
+        }
+
+        &:hover::after{    
+            width: 100%;
+        }
     }
 `

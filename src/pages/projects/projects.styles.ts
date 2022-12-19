@@ -40,6 +40,10 @@ export const CardList = styled.div`
             font-size: 2.6em;
             border-radius: 50%;
             cursor: pointer;
+            transition:0.4s;
+            &:hover{
+                opacity: 0.8;
+            }
         }
     }
     .actual{
@@ -93,6 +97,10 @@ export const CardList = styled.div`
         width: 10em;
         padding: 0.6em;
         border-radius: 5px;
+        transition: 0.4s;
+        &:hover{
+            opacity: 0.6;
+        }
     }
     #repo{
         border: 1px solid #FF5C00;;

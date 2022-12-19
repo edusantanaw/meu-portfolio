@@ -13,6 +13,9 @@ export const Container = styled.section`
     #error{
         color: red;
     }
+    #success{
+        color: green;
+    }
     h2{
         align-self: center;
         padding-bottom: 0.2em;
@@ -69,6 +72,10 @@ export const Form = styled.div`
         border-radius: 5px;
         svg{
             font-size: 2em;
+        }
+        transition: 0.3s;
+        &:hover{
+            opacity: 0.7;
         }
     }
 

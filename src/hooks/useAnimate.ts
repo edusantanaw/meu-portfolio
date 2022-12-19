@@ -14,7 +14,6 @@ export function useAnimate(ref: React.MutableRefObject<HTMLSpanElement | null>) 
         const observer = new IntersectionObserver((entry) => {
             const t = entry[0]
             if (t.isIntersecting) {
-                console.log(t)
                 setShow(true)
             }
 

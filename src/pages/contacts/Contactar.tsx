@@ -14,23 +14,23 @@ type data = { email: string, from_name: string, message: string }
 const Contactar = () => {
     const emailRef = useRef<HTMLInputElement | null>(null)
     const nameRef = useRef<HTMLInputElement | null>(null)
-    const subjectRef = useRef<HTMLInputElement | null>(null)
     const messageRef = useRef<HTMLTextAreaElement | null>(null)
     const spanRef = useRef<HTMLSpanElement>(null)
     const { show } = useAnimate(spanRef)
     const [error, setError] = useState<string | null>(null)
+    const [sended, setSended] = useState<boolean>(false)
 
     async function handleSenderMailer(data: data) {
         await sender(data)
     }
 
-    function validate() {
-        if (emailRef.current && nameRef.current && subjectRef.current && messageRef.current) {
+    async function validate() {
+        if (emailRef.current && nameRef.current && messageRef.current) {
             if (!nameRef.current.value) {
                 setError('O nome está invalido!')
                 return
             }
-            if (!emailRef.current.value) {
+            if (!emailRef.current.value || !emailRef.current.value.includes('@')) {
                 setError('Email é invalido!')
                 return
             }
@@ -45,13 +45,13 @@ const Contactar = () => {
                 from_name: nameRef.current.value,
                 message: messageRef.current.value
             }
-            handleSenderMailer(data)
+            await handleSenderMailer(data)
+            setSended(true)
             return
         }
         setError('Formulario invalido!')
     }
 
-    console.log(error)
     const defaultConfig = {
         loop: true,
         autoplay: true,
@@ -60,6 +60,7 @@ const Contactar = () => {
 
     return (
         <Container id="contact" className={show ? 'contact' : ''}>
+
             <SecondaryTitle>Contatar</SecondaryTitle>
             <span ref={spanRef} />
             <div className='content'>
@@ -77,8 +78,9 @@ const Contactar = () => {
                         <label><BiMessageSquare /> Mensagem</label>
                         <textarea placeholder='oferta' ref={messageRef} />
                     </div>
-                    <span id="error">{error && error}</span>
-                    <button onClick={validate}>Enviar mensagem <FiSend /></button>
+                    {error && <span id="error">{error}</span>}
+                    {sended && <span id="success" >Email enviado com sucesso!</span>}
+                    {!sended && <button onClick={async () => await validate()}>Enviar mensagem <FiSend /></button>}
                 </Form>
             </div>
         </Container>

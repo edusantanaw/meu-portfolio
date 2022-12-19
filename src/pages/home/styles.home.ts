@@ -83,7 +83,6 @@ export const Button = styled.button`
     cursor: pointer;
     transition: 0.4s;
     &:hover{
-        background-color:#fff;
-        color: #FF5C00;
+        opacity: 0.7;
     }
 `
