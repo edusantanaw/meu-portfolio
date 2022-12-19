@@ -44,4 +44,49 @@ export const Navegation = styled.header`
             width: 100%;
         }
     }
+
+    #hamb {
+        font-size: 2em;
+        border-radius: 15px;
+        display: none;
+        cursor: pointer;
+    }
+
+    #close{
+        font-size: 2.5em;
+        position: absolute;
+        top: 10px;
+        left: 0.1em;
+        color: red;
+        cursor: pointer;
+    }
+
+    @media (max-width: 650px){
+        padding: 1em 4em;
+        ul{
+            display: none;
+        }
+        .menu{
+            padding: 3em 1em 1em 2em;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 100vh;
+            right: 0;
+            top: 0;
+            background-color: #0f0f0f;
+
+            li{
+                font-size: 1.6em;
+            }
+            li::after{
+                content: none;
+                width: 0;
+            }
+        }
+        #hamb{
+            display: block;
+        }
+    }
 `
