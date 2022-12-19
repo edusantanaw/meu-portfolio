@@ -8,6 +8,11 @@ export const Container = styled.section`
     display: flex;
     opacity: 0;
     overflow: auto;
+
+
+    #ref{
+        align-self: center;
+    }
     .me{
         display: flex;
         width: 40em;

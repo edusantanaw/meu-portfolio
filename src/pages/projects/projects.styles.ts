@@ -65,7 +65,7 @@ export const CardList = styled.div`
                 position: relative;
                 img{
                     width: 100%;
-                    height: 60vh;    
+                    height: 30vh;    
                 }
               
                 #next, #prev{

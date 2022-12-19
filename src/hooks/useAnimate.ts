@@ -7,7 +7,7 @@ export function useAnimate(ref: React.MutableRefObject<HTMLSpanElement | null>) 
     useEffect(() => {
         const options = {
             root: null,
-            rootMargin: "-30px",
+            rootMargin: "-10px",
             threshold: 1.0,
         }
 

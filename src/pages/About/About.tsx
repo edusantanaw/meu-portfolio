@@ -11,8 +11,8 @@ const About = () => {
     return (
         <Container className={show ? "about" : ''} id="about">
             <div id="principal" >
+                <span ref={myRef} id="ref" />
                 <SecondaryTitle>Sobre mim</SecondaryTitle>
-                <span ref={myRef}></span>
                 <div className="summary">
                     <SubTitle>Resumo</SubTitle>
                     <p>Sou um desenvolvedor web, tenho um perfil mais generalista, gosto de estudar sobre diversas
