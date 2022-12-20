@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { Container, Item, List } from './tecnlogies.styles'
 import { FaNodeJs } from 'react-icons/fa'
-import { SiNestjs, SiTypescript, SiCss3, SiHtml5, SiStyledcomponents, SiReact, SiRedux, SiTailwindcss, SiJest, SiExpress, SiPostgresql, SiMongodb, SiDocker } from 'react-icons/si'
+import { SiFigma, SiTypescript, SiCss3, SiHtml5, SiStyledcomponents, SiReact, SiRedux, SiTailwindcss, SiJest, SiExpress, SiPostgresql, SiMongodb, SiDocker } from 'react-icons/si'
 import { useAnimate } from '../../hooks/useAnimate'
 
 const Tecnologies = () => {
@@ -14,7 +14,7 @@ const Tecnologies = () => {
             <span ref={myRef}></span>
             <List>
                 <Item color='#06951C'><FaNodeJs /> <span>NodeJs</span></Item>
-                <Item color='#A70946'><SiNestjs /> <span>NestJs</span></Item>
+                <Item color='#A70946'><SiFigma /> <span>Figma</span></Item>
                 <Item color='#A70909'><SiJest /> <span>Jest</span> </Item>
                 <Item color='#D6B300'><SiExpress /> <span>ExpressJs</span></Item>
                 <Item color='#002ED6'><SiPostgresql /> <span>Postgres</span></Item>

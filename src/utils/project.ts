@@ -1,7 +1,7 @@
 import articles from '../assets/projects/artihos.webp'
 import fylo from '../assets/projects/fylo.webp'
 import { FaNodeJs } from 'react-icons/fa'
-import { SiNestjs, SiTypescript, SiCss3, SiSocketdotio, SiHtml5, SiStyledcomponents, SiReact, SiRedux, SiTailwindcss, SiJest, SiExpress, SiPostgresql, SiMongodb, SiDocker } from 'react-icons/si'
+import { SiTypescript, SiFigma, SiCss3, SiSocketdotio, SiHtml5, SiStyledcomponents, SiReact, SiRedux, SiTailwindcss, SiJest, SiExpress, SiPostgresql, SiMongodb, SiDocker } from 'react-icons/si'
 import port from '../assets/projects/portfolio.png'
 import rede from '../assets/projects/rd.png'
 import food from '../assets/projects/food.png'
@@ -10,7 +10,8 @@ export const projects = [
     {
         img: rede,
         name: 'Rede social',
-        descriptions: `Este projeto é o meu antigo projeto. Desenvolvido em react js e styled-coponenets.`,
+        descriptions: `Uma rede social no qual permite que o usuario possa criar posts,
+         fazer comentararios, curtir, seguir e ser seguido por outros usuarios, enviar mensagems privadas.`,
         tecnolgies: [
             { icon: SiReact, color: '#092aa1' },
             { icon: SiTypescript, color: '#061e95' },
@@ -27,7 +28,8 @@ export const projects = [
     {
         img: food,
         name: 'Food delivery',
-        descriptions: `Este projeto é um simulodor de food-delivery.`,
+        descriptions: `Sistema de pedido de entrega de comida, 
+        no qual o usuario pode adicionar produtos no carinho e finalizar o pedido.`,
         tecnolgies: [
             { icon: SiReact, color: '#092aa1' },
             { icon: SiTypescript, color: '#061e95' },
@@ -36,8 +38,21 @@ export const projects = [
             { icon: FaNodeJs, color: '#06951C' },
             { icon: SiExpress, color: '#D6B300' },
             { icon: SiRedux, color: '#44053e' },
+            { icon: SiFigma, color: '#A70946' },
         ],
         see: '',
+        repo: 'https://github.com/edusantanaw/Sistema-de-cria-de-artigos'
+    },
+    {
+        img: port,
+        name: 'Antigo portfolio',
+        descriptions: `Meu antigo portfolio desenvolvido em react.`,
+        tecnolgies: [
+            { icon: SiReact, color: '#092aa1' },
+            { icon: SiStyledcomponents, color: '#aa0c9a' },
+            { icon: SiTypescript, color: '#061e95' },
+        ],
+        see: 'antigoporteduardo.netlify.app',
         repo: 'https://github.com/edusantanaw/Sistema-de-cria-de-artigos'
     },
     {
@@ -64,7 +79,7 @@ export const projects = [
             { icon: SiReact, color: '#092aa1' },
             { icon: SiStyledcomponents, color: '#aa0c9a' }
         ],
-        see: '',
+        see: 'https://fylo-edusantanaw.netlify.app/',
         repo: 'https://github.com/edusantanaw/fyo-lading-page'
     },
 

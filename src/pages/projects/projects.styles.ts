@@ -13,14 +13,15 @@ export const Container = styled.section`
 
     @media (max-width: 1100px){
         padding: 0 2em;
-       }
+    }
 
-       @media (max-width: 700px){
+    @media (max-width: 700px){
         padding: 0 2em;
-       }
-       @media (max-width: 530px){
+    }
+    
+    @media (max-width: 530px){
         padding: 0;    
-        }
+    }
     
 `
 

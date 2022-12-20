@@ -58,12 +58,12 @@ const Projects = () => {
                         })}
                     </div>
                     <div className='links'>
-                        <a id="see" href={atual.repo}>Ver projeto</a>
+                        {atual.see.length > 0 && <a id="see" href={atual.repo}>Ver projeto</a>}
                         <a id="repo" href={atual.repo}>Repositorio</a>
                     </div>
                 </div>
             </CardList>
-        </Container>
+        </Container >
     )
 }
 
