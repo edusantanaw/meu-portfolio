@@ -23,7 +23,7 @@ export const projects = [
             { icon: SiRedux, color: '#44053e' },
         ],
         see: '',
-        repo: 'https://github.com/edusantanaw/Sistema-de-cria-de-artigos'
+        repo: 'https://github.com/edusantanaw/rede-social-public'
     },
     {
         img: food,
@@ -41,7 +41,7 @@ export const projects = [
             { icon: SiFigma, color: '#A70946' },
         ],
         see: '',
-        repo: 'https://github.com/edusantanaw/Sistema-de-cria-de-artigos'
+        repo: 'https://github.com/edusantanaw/food-simulator'
     },
     {
         img: port,
@@ -53,7 +53,7 @@ export const projects = [
             { icon: SiTypescript, color: '#061e95' },
         ],
         see: 'antigoporteduardo.netlify.app',
-        repo: 'https://github.com/edusantanaw/Sistema-de-cria-de-artigos'
+        repo: 'https://github.com/edusantanaw/Novo-porfolio'
     },
     {
         img: articles,
