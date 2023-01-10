@@ -57,4 +57,5 @@ export const SecondaryTitle = styled.h2`
 `
 export const SubTitle = styled.h3`
     font-size: 2em;
+    color: #FF5C00;
 `

@@ -135,10 +135,12 @@ export const CardList = styled.div`
 
         h4{
             font-size:2em;
+            color: #FF5C00;
         }
         span{
             margin-top: 2em;
             font-size: 1.4em;
+            color: #FF5C00;
         }
 
         @media (max-width: 1000px){

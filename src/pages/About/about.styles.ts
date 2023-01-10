@@ -25,6 +25,9 @@ export const Container = styled.section`
         margin-top: 2em;
         width: 90%;
     }
+    p{
+        color: #B7ADAD;
+    }
     .infos{
         margin-top: 2em;
         ul{
@@ -46,6 +49,7 @@ export const Container = styled.section`
     }
     h3{
             font-size: 2em;
+            color: #FF5C00;
         }
 
         @media (max-width: 880px){
